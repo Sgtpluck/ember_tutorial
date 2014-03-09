@@ -58,15 +58,15 @@
       <button {{action 'edit'}}>Edit</button>
     {{/if}}
 
-    <h1>{{title}}</h1>
+    <h1>{{markdown title}}</h1>
     <h2>by {{author.name}} <small class='muted'>({{format-date date}})</small></h2>
     <hr>
     <div class='intro'>
-      {{excerpt}}
+      {{markdown excerpt}}
     </div>
 
     <div class='below-the-fold'>
-      {{body}}
+      {{markdown body}}
     </div>
   </script>
 
